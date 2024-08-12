@@ -1,0 +1,24 @@
+
+.country-item{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+}
+
+.detail-country{
+    padding: 1rem 1.5rem;
+    height: 7.2rem;
+}
+
+.detail-country p{
+    margin: 0;
+}
+
+.detail-country h3{
+    margin: 0rem 0rem 0.5rem 0rem ;
+}
+
+.img-country{
+    width: 100%;
+    max-height: 10rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}

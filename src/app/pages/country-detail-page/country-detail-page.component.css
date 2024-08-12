@@ -1,0 +1,65 @@
+
+.container{
+    padding: 5rem;
+}
+
+.back-button{
+    margin-bottom: 5rem;
+    padding: 0.8rem 2.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+i{
+    margin-right: 0.5rem;
+}
+
+img{
+    width: 45rem;
+    height: 30rem;
+}
+
+.content-country{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+}
+
+.info-country{
+    width: 100%;
+}
+
+.info-country p{
+    font-size: 1.5rem;
+}
+
+.row{
+    display: flex;
+    gap: 5rem;
+}
+
+.borders{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.borders p{
+    margin-right: 0.5rem;
+}
+
+.border{
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 8px;
+}
+
+

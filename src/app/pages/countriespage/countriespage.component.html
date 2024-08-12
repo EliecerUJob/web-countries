@@ -1,0 +1,21 @@
+
+<main class="container">
+    <section class="row">
+        <label for="term" class="container-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input 
+                [(ngModel)]="searchText"
+                type="text" 
+                for="term" 
+                name="countryInput"  
+                placeholder="Search for a country..."
+                >
+        </label>
+        <app-filter></app-filter>
+    </section>
+    <section class="countries-list">
+        <ng-container *ngFor="let country of countries | search:searchText">
+            <app-country [country]="country" [routerLink]="['/country', country.name]"></app-country>
+        </ng-container>
+    </section>
+</main>

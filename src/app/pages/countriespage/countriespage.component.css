@@ -1,0 +1,31 @@
+
+.container{
+    margin: 2rem 5rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.countries-list{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows:  repeat(2, minmax(100px, auto));
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.container-search{
+    display: flex;
+    gap: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+input{
+    width: 25rem;
+    border: none;
+    font-size: 1rem;
+}

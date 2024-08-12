@@ -1,0 +1,22 @@
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.mode-button{
+    display: flex;
+    gap: 0.6rem;
+}
+
+.mode-button span{
+    font-weight: bold;
+}
+
+h1{
+    margin: 0;
+    font-size: larger;
+    font-weight: bold;
+}

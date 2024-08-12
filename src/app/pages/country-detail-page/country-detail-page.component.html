@@ -1,0 +1,42 @@
+
+<main class="container">
+    <button class="back-button" type="button" [routerLink]="['/countries']">
+        <i class="fa-solid fa-arrow-left-long"></i>
+        <span>Back</span>
+    </button>
+    <section class="content-country">
+        <img src="{{ countrySelected.flags.png }}" alt="flag image">
+        <article class="info-country">
+            <h1>{{ countrySelected.name }}</h1>
+            <div class="row">
+                <div class="col">
+                    <p> <b>Native name:</b> {{ countrySelected.nativeName }}</p>
+                    <p> <b>Population:</b> {{ countrySelected.population }}</p>
+                    <p> <b>Region:</b> {{ countrySelected.region }} </p>
+                    <p> <b>Sub region:</b> {{ countrySelected.subregion }}</p>
+                    <p> <b>Capital:</b> {{ countrySelected.capital }}</p>
+                </div>
+                <div class="col">
+                    <p> <b>Top level domain:</b> {{ countrySelected.topLevelDomain }}</p>
+                    <p> <b>Currencies:</b> {{ countrySelected.currencies[0].name}}</p>
+                    <p><b>Languages:</b> {{ countrySelected.languages[0].nativeName }}</p>
+                </div>
+            </div>
+            <div class="borders">
+                <p>
+                    <b>Border countries</b>
+                </p>
+                <ng-container *ngIf="countrySelected.borders; else templateElse">
+                        <ng-container *ngFor="let border of countrySelected.borders">
+                            <div class="border">
+                                {{ border }}
+                            </div>
+                        </ng-container>                       
+                </ng-container>
+                <ng-template #templateElse>
+                    <div>Doesn't have borders</div>
+                </ng-template>
+            </div>
+        </article>
+    </section>
+</main>
